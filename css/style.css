@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Source+Sans+Pro&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65em;
+    background: #29313a;
+    color: #eee;
+}
+h1, h2, h3, a {
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: .225em;
+    text-transform: uppercase;
+}
+p {
+    letter-spacing: .225em;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+#container  {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    height: 100vh;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/capa.jpg) no-repeat center;
+    background-position-y: 90%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#header #header-conteudo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#header-conteudo div:first-child {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3em;
+}
+#header-conteudo div #logo {
+    font-size: 2em;
+    opacity: 0.9;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #fff;
+    padding: 25px; 
+}
+#header-conteudo div p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0 35%;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.botao, .botao-transparente {
+    background: #ed4933;
+    padding: 10px 35px;
+    border-radius: 3px;
+}
+.botao:hover, .botao-transparente {
+    transition: 1s;
+    background: #f16c5a;
+}
+.botao a, .botao-transparente{
+    font-weight: 600;
+}
+#header-conteudo #learn {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+#learn {
+    position: absolute;
+    bottom: 2em;
+}
+#learn a {
+    font-size: .9em;
+    font-weight: 400;
+    padding: .5em;
+}
+#learn a:hover {
+    transition: 1s;
+    color: rgb(165, 165, 165);
+}
+#header-conteudo i {
+    font-size: 1.4em;
+}
+/* Principal */
+main {
+    background: #2e3842;
+}
+#secao-1 {
+    background: #21B2A6;
+    overflow: hidden;
+}
+#secao-1 #conteudo, #secao-3 #conteudo {
+    max-width: 740px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5em 0px;
+}
+#secao-1 #conteudo h2, #secao-3 #conteudo h2{
+    line-height: 1.65em;
+    padding-bottom: 25px;
+}
+#secao-1 #conteudo h2 {
+    border-bottom: 1px solid #198d83;
+}
+#secao-3 #conteudo h2 {
+    border-bottom: 1px solid #3d3f70;
+}
+#secao-1 #conteudo p, #secao-3 #conteudo p {
+    font-size: .9em;
+    letter-spacing: 0.0375em;
+    padding-top: 10px;
+}
+/* Seção 2 */
+#box, #box-reverse {
+    display: flex;
+    align-items: center;
+}
+#box-reverse {
+    flex-direction: row-reverse;
+    background: #273038;
+}
+#secao-2 .img {
+    max-width: 566px;
+    max-height: 320px;
+    overflow: hidden;
+}
+#secao .img img {
+    width: 100%;
+}
+#secao-2 .conteudo {
+    max-width: 800px;
+    max-height: 320px;
+}
+#secao-2 .conteudo div {
+    margin: 0px 100px;
+    max-width: 600px;
+}
+#secao-2 .conteudo h2 {
+    line-height: 1.5em;
+}
+#secao-2 .conteudo p {
+    line-height: 1.8em;
+    font-size: 11pt;
+    letter-spacing: 0.0375em;
+}
+/* Seção 3 */
+#secao-3 {
+    background: #505393;
+    padding-bottom: 100px;
+}
+#cards {
+    max-width: 1046px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#cards .card  {
+    width: 50%;
+    min-width: 360px;
+    position: relative;
+}
+#cards .card i {
+    position: absolute;
+    top: 85px;
+    left: 50px;
+    font-size: 1.6em;
+    color: #1bd1c5;
+}
+
+#cards .card h2 {
+    font-size: 1.2em;
+    line-height: 1.65em;
+    text-align: justify;
+}
+
+#cards .card p {
+    font-size: .9em;
+    letter-spacing: 0.0375em;
+    text-align: justify;
+}
+.card div {
+    max-width: 320px;
+    margin: auto;
+    text-align: center;
+    margin: 80px auto;
+}
+.bg-car-1 {
+    background: #4D508E;
+
+}
+.bg-car-2 {
+    background: #4A4D89;
+}
+.bg-car-3 {
+    background: #484A83;
+}
+.bg-car-4 {
+    background: #45477e;
+}
+.bg-car-5 {
+    background: #424479;
+}
+.bg-car-6 {
+    background: #3F4174;
+}
+/* Rodapé */
+#rodape {
+    width: 100%;
+    background: url(../img/capa.jpg) no-repeat center;
+    background-position-y: 90%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#rodape #ct-conteudo {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+
+}
+#ct-conteudo #conteudo {
+    overflow: hidden;
+    max-width: 420px;
+    text-align: justify;
+}
+#ct-conteudo #conteudo h2 {
+    font-size: 1.450em;
+    line-height: 1.65em;
+   
+}
+#ct-conteudo #conteudo p {
+    font-size: .9em;
+    letter-spacing: 0.0375em;
+   
+}
+#ct-conteudo #botoes {
+    display: flex;
+    flex-direction: column;
+}
+#ct-conteudo #botoes .botao, .botao-transparente{
+    margin: 8px 0px;
+    text-align: center;
+}
+.botao-transparente {
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+}
+.botao-transparente:hover {
+    transition: 1s;
+    background: rgba(240, 238, 238, 0.247);
+    
+}
+#rede-social {
+    background: #222427ee;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#rede-social div {
+    display: flex;
+    gap: 30px;
+    margin-top: 35px;
+}
+#rede-social div i {
+    font-size: 1.4em;
+    color: #787A7C;
+}
+#rede-social div i:hover {
+    transition: 1s;
+    color: #fff;
+}
+#rede-social div #referencias {
+    display: flex;
+    
+}
+#rede-social #referencias li {
+    list-style: none;
+    /* border: 1px solid #fff; */
+    margin: 0 15px;
+}
+#rede-social #referencias li a {
+    font-size: .9em;
+    font-weight: lighter;
+    color: #787A7C;
+}
+#rede-social #referencias li a:hover {
+    transition: 1s;
+    color: #fff;
+}
+#rede-social #referencias span {
+    color: #909396;
+}
