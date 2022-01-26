@@ -19,10 +19,15 @@ p {
 a {
     text-decoration: none;
 }
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 img {
     width: 100%;
 }
-#container  {
+#container {
     width: 100%;
     max-width: 1366px;
     margin: 0 auto;
@@ -78,34 +83,54 @@ img {
         margin-bottom: 2em;
     }
 }
+/* Navegação */
 #navegacao {
-    position: sticky;
+    position: fixed;
+    z-index: 3;
+}
+#navegacao .btn-open {
+    display: inline-block;
+    background: url(../img/menu.svg) no-repeat center;
+    background-size: 25px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0);
+    padding: 20px 15px;
+}
+.btn-visibily {
+    visibility: hidden;
+}
+#navegacao .btn-close {
+    display: inline-block;
+    background: url(../img/close.svg) no-repeat center;
+    background-size: 18px;
+    color: rgba(255, 255, 255, 0);
+    padding: 20px;
+}
+#navegacao .menu {
+    position: fixed;
     top: 0;
-    left: 0;
-    z-index: 1;
+    padding: 0;
+    margin: 0;
+    width: 30%;
+    height: 100vh;
+    background: #000000c0;
+    transform: translateX(-300%);
+    transition: transform 200ms step-start;
 }
-#navegacao i {
-    position: absolute;
-    font-size: 1.5em;
-    top: 20px;
-    right: 25px;
-    padding: 12px 14px;
-    border-radius: 100px;
-    background: rgba(0, 0, 0, 0.103);
-    color: #fff;
-    cursor: pointer;
+#navegacao .menu-open {
+    transform: translateX(0);
 }
-@media (max-width: 1080px) {
-    #navegacao i {
-        font-size: 1.2em;
-        top: 15px;
-        right: 15px;
-        padding: 8px 10px;
-        border-radius: 100px;
-        background: rgba(0, 0, 0, 0.103);
-        color: #fff;
-        cursor: pointer;
+@media (max-width: 700px) {
+    #navegacao .menu {
+        width: 50%;
     }
+}
+.menu .item-menu a {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
 }
 #header #header-conteudo {
     width: 100%;
@@ -343,6 +368,9 @@ main {
     background: #3F4174;
 }
 @media (max-width: 1040px) {
+    #secao-3 {
+        padding-bottom: 0;
+    }
     #cards .card  {
         width: 100%;
     }
@@ -470,6 +498,7 @@ main {
     #rede-social div #referencias {
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
     #rede-social #referencias span {
         visibility: hidden;
